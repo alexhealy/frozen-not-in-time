@@ -97,4 +97,40 @@ p {
   top: 315px;
   left: 735px;
   max-width: 127px;
+  z-index: 5;
+}
+
+@keyframes forward {
+
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(70px);
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  h1 {
+    left: 215px;
+  }
+
+  p {
+    left: 215px;
+  }
+
+  .btn {
+    left: 215px;
+  }
+
+  .cherry {
+    left: 280px;
+  }
+
+  .vanilla-fudge {
+    left: 945px;
+  }
 }
