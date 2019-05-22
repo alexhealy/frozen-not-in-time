@@ -70,3 +70,31 @@ p {
   max-width: 55px;
   z-index: 4;
 }
+
+.vanilla-fudge {
+  top: 70px;
+  left: 725px;
+  max-width: 140px;
+  z-index: 3;
+  animation: forward 1s linear forwards;
+}
+
+.chocolate-chip {
+  top: 140px;
+  left: 735px;
+  max-width: 140px;
+  z-index: 2;
+}
+
+.mint-chip {
+  top: 225px;
+  left: 728px;
+  max-width: 140px;
+  z-index: 1;
+}
+
+.cone {
+  top: 315px;
+  left: 735px;
+  max-width: 127px;
+}
