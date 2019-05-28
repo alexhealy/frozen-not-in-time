@@ -2,52 +2,112 @@ html {
   font-family: "Fredoka One", sans-serif;
 }
 
-.content {
-  border-top: 8px solid #b3fbff;
-  border-bottom: 8px solid #b3fbff;
+main {
+  background: repeating-linear-gradient(-30deg, #b3fbff, #c9fcff 20px, #d4fdff 20px);
+  min-height: 500px;
   max-height: 500px;
-  background-image: repeating-linear-gradient(-33deg, #d4fdff, #d4fdff 10px, #c9fcff 10px, #c9fcff 20px);
 }
 
-.text {
-  text-shadow: 1px 2px 1px rgba(0, 0, 0, .3);
-
-  animation: blur 1s linear 1;
-  transition: all 3s linear 5s;
-}
-
-@keyframes blur {
-
-  0% {
-    filter: blur(0);
-    filter: opacity(0);
-  }
-
-  50% {
-    filter: blur(10px);
-    filter: opacity(25%);
-  }
-
-  100% {
-    filter: blur(0);
-    filter: opacity(100%);
-  }
-
-}
-
-h1 {
+.title {
   color: #990073;
-  top: 88px;
-  left: 45px;
-  transform: rotate(-9deg);
+  transform: rotate(-8deg);
+  margin-left: -15px;
+}
+
+p, a {
+  color: #c09;
+  text-decoration: none;
 }
 
 p {
-  color: #c09;
-  top: 185px;
-  left: 57px;
-  transform: rotate(-5deg);
   max-width: 19em;
+  transform: rotate(-5deg);
+}
+
+.title {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+
+.btn-ghost {
+  border-color: #990073;
+}
+
+.btn-ghost:hover {
+  border-color: #990073;
+}
+
+.text-box {
+  transform-origin: left center;
+  padding-left: 6%;
+  animation: fading 3500ms linear;
+}
+
+@keyframes fading {
+
+  0% {
+    -webkit-filter: opacity(0);
+  }
+
+  50% {
+    -webkit-filter: opacity(0);
+  }
+
+  100% {
+    -webkit-filter: opacity(1);
+    filter: blur(.5px);
+  }
+
+}
+
+.image-frame {
+  min-height: 480px;
+}
+
+.cone {
+  transform: scale(.7);
+  bottom: 100%;
+  right: 35px;
+  animation: cone-drop 500ms forwards linear;
+}
+
+.mint-chip {
+  bottom: 100%;
+  right: 35px;
+  transform: scale(.7);
+  animation: mint-drop 500ms forwards linear 500ms;
+
+  /* name furation property easing delay */
+}
+
+.chocolate-chip {
+  bottom: 100px;
+  right: 30px;
+  transform: scale(.7);
+  z-index: 1;
+  animation: chocolate-drop 500ms forwards linear 1000ms;
+}
+
+.vanilla-fudge {
+  bottom: 100px;
+  right: 35px;
+  transform: scale(.7);
+  z-index: 2;
+  animation: fudge-drop 500ms forwards linear 1500ms;
+}
+
+.cherry {
+  bottom: 100%;
+  left: 745px;
+  max-width: 55px;
+  z-index: 4;
+}
+
+p {
+  transform: scale(.7);
+  bottom: 100%;
+  right: 35px;
+  animation: cone-drop 500ms forwards linear;
+
 }
 
 .btn-ghost {
@@ -71,33 +131,12 @@ p {
   z-index: 4;
 }
 
-.vanilla-fudge {
-  top: 70px;
-  left: 725px;
-  max-width: 140px;
-  z-index: 3;
-  animation: forward 1s linear forwards;
-}
-
-.chocolate-chip {
-  top: 140px;
-  left: 735px;
-  max-width: 140px;
-  z-index: 2;
-}
 
 .mint-chip {
   top: 225px;
   left: 728px;
   max-width: 140px;
   z-index: 1;
-}
-
-.cone {
-  top: 315px;
-  left: 735px;
-  max-width: 127px;
-  z-index: 5;
 }
 
 @keyframes forward {
