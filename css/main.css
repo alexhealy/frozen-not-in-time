@@ -100,7 +100,7 @@ p {
   right: 35px;
   transform: scale(.7);
   z-index: 3;
-  animation: cherry-drop 500ms forwards linear 2000ms;
+  animation: cherry 500ms forwards linear 2000ms;
 }
 
 @keyframes cone-drop {
@@ -142,6 +142,7 @@ p {
 }
 
 @keyframes fudge-drop {
+
   0% {
     opacity: 0;
   }
