@@ -36,7 +36,7 @@ p {
   border-color: #990073;
 }
 
-.text-box {
+.text-grid {
   transform-origin: left center;
   padding-left: 6%;
   animation: fading 3500ms linear;
@@ -59,7 +59,7 @@ p {
 
 }
 
-.image-frame {
+.image-grid {
   min-height: 480px;
 }
 
@@ -67,43 +67,41 @@ p {
   transform: scale(.7);
   bottom: 100%;
   right: 35px;
-  animation: cone-drop 500ms forwards linear;
+  animation: falling-cone 500ms forwards linear;
 }
 
 .mint-chip {
   bottom: 100%;
-  right: 35px;
+  right: 20px;
   transform: scale(.7);
-  animation: mint-drop 500ms forwards linear 500ms;
-
-  /* name furation property easing delay */
+  animation: falling-mint 500ms forwards linear 500ms;
 }
 
 .chocolate-chip {
-  bottom: 100px;
-  right: 30px;
+  bottom: 100%;
+  right: 20px;
   transform: scale(.7);
   z-index: 1;
-  animation: chocolate-drop 500ms forwards linear 1000ms;
+  animation: falling-chocolate 500ms forwards linear 1000ms;
 }
 
 .vanilla-fudge {
-  bottom: 100px;
-  right: 35px;
+  bottom: 100%;
+  right: 30px;
   transform: scale(.7);
   z-index: 2;
-  animation: fudge-drop 500ms forwards linear 1500ms;
+  animation: falling-fudge 500ms forwards linear 1500ms;
 }
 
 .cherry {
   bottom: 100%;
-  right: 35px;
+  right: 66px;
   transform: scale(.7);
   z-index: 3;
-  animation: cherry 500ms forwards linear 2000ms;
+  animation: falling-cherry 500ms forwards linear 2000ms;
 }
 
-@keyframes cone-drop {
+@keyframes falling-cone {
 
   0% {
     bottom: 100%;
@@ -115,45 +113,53 @@ p {
 
 }
 
-@keyframes mint-drop {
+@keyframes falling-mint {
 
   0% {
     opacity: 0;
   }
 
   100% {
-    bottom: 54px;
+    bottom: 80px;
     opacity: 1;
   }
 
 }
 
-@keyframes chocolate-drop {
+@keyframes falling-chocolate {
 
   0% {
     opacity: 0;
   }
 
   100% {
-    bottom: 137px;
+    bottom: 160px;
     opacity: 1;
   }
 
 }
 
-@keyframes fudge-drop {
+@keyframes falling-fudge {
 
   0% {
     opacity: 0;
   }
 
   100% {
-    bottom: 212px;
+    bottom: 235px;
     opacity: 1;
   }
 
+}
+
+@keyframes falling-cherry {
+
+  0% {
+    opacity: 0;
+  }
+
   100% {
-    bottom: 297px;
+    bottom: 360px;
     opacity: 1;
   }
 
